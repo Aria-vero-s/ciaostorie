@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Paytone+One&display=swap');
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Paytone One', sans-serif;
+*/
+
+.navbar {
+    background-color:#FFF;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar img {
+    width: auto;
+    height: 100px;
+    padding:20px;
+}
+
+.navbar-toggler {
+    margin-right:10px;
+}
+
+.nav-link {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Paytone One', sans-serif;
+}
+
+.btn-primary {
+    background-color: #FFF !important;
+    color:#000 !important;
+    border-color:#e8e8e8 !important;
+}
+
+.btn-secondary {
+    background-color: #009246;
+}
+
+.btn-warning {
+    background-color: #FFC107;
+}
+
+.btn-danger {
+    background-color: #CE2B37;
+}

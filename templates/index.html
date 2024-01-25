@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="hero">
+        <h1>Short Stories in Italian for Beginners</h1>
+    </section>
+
+    {% for post in posts %}
+    <div class="card my-3">
+        <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.content }}</p>
+        <a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary"><i class="fa-solid fa-book"></i> Read more</a>
+        <a href="{% url 'post_edit' pk=post.pk %}" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+        <a href="{% url 'post_delete' pk=post.pk %}" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a>
+        </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
